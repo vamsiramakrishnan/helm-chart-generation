@@ -1,4 +1,29 @@
 helm-generate:
   steps:
-    - vamsiramakrishnan/helm-chart-generate@0.0.1: 
+    - vamsiramakrishnan/helm-chart-generate@0.0.2:
+        token: $KUBE_USER_TOKEN # optional, default: ""
+        token: $KUBE_USER_TOKEN
+        username: $KUBE_USERNAME
+        server: $KUBE_ENDPOINT
+        certificate-authority: $KUBE_CERT_AUTH_DATA
+        cluster-name: $KUBE_CLUSTER_NAME
+        context-name: $KUBE_CONTEXT_NAME
+        insecure-skip-tls-verify: true
+        chart-name: weblogic-operator
+        chart-dir:                <string> # optional, default: ""
+        configmaps:               <string> # optional, default: ""
+        daemons:                  <string> # optional, default: ""
+        deployments:              <string> # optional, default: ""
+        jobs:                     <string> # optional, default: ""
+        kube-dir:                 <string> # optional, default: ""
+        pods:                     <string> # optional, default: ""
+        pvcs:                     <string> # optional, default: ""
+        pvs:                      <string> # optional, default: ""
+        rcs:                      <string> # optional, default: ""
+        replicasets:              <string> # optional, default: ""
+        secrets:                  <string> # optional, default: ""
+        services:                 <string> # optional, default: ""
+        statefulsets:             <string> # optional, default: ""
+        storageclasses:           <string> # optional, default: ""
+        preserve-name:            <bool> # optional, default: ""
         
